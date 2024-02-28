@@ -1,6 +1,7 @@
 
 <form method='post'>
 enter a number<input type="text" name="fname">
+
 <input type="submit" name="submit">
 </form>
 <?php
@@ -17,6 +18,7 @@ for($i=2;$i<$b;$i++)
 {
   if($b%$i==0)
   $c++;
+break;
 }
 if($c==0)
 // echo '<script>alert("prim number")</script>';
