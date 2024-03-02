@@ -16,7 +16,7 @@ function __construct()
 
 }
 
-class B extends A{ 
+class B extends A{
     public $address;
     public $phone;
     function Show(){ 
