@@ -1,0 +1,9 @@
+##Three steps to set and get session value
+	step1:session_start();[when you login]
+	step2:$_SESSION[name] = value;[set session name and value]
+	step3:echo $_SESSION[name];[get session value]
+Delete or distroy session"
+	step1:session_unset();[remove all session variables]
+	step2:session_destroy();[destroy the session]
+
+when logout we can use session_destroy method.
