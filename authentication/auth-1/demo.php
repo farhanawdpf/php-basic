@@ -41,7 +41,7 @@ if(isset($_POST["btnSubmit"])){
 </head>
 
 <body>
-<a href="another.php">another</a>
+<a href="logout.php">Logout</a>
 <form action="#" method="post">
 <div>Id<br/>
 <input type="text" name="txtId" />
@@ -64,7 +64,7 @@ if(isset($_POST["btnSubmit"])){
 
 </form>
 <?php 
-	student::display_students();
+	Student::display_students();
 ?>
 
 </body>
