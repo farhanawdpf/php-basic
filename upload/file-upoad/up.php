@@ -3,7 +3,6 @@ if (isset($_POST["btnsubmit"])){
   $filename = $_FILES['myfile']['name'];
   $tmpfile = $_FILES['myfile']['tmp_name'];
   $img = 'image/';
- 
    if(!empty($filename)){ 
     move_uploaded_file($tmpfile,$img.$filename);
    } else { 
