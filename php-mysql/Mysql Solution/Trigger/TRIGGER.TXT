@@ -1,0 +1,9 @@
+delimiter //
+Create trigger pro_del
+after delete on manufacturer
+for each row 
+begin 
+	delete from product where manu_id = OLD.id;
+end;//
+
+

@@ -1,0 +1,10 @@
+delimiter //
+create procedure insert_manu
+(IN n varchar(50),IN a varchar(100), IN p varchar(50))
+
+begin
+
+	insert into manufacturer set id = null, name = n, address= a, phone = p;
+
+end;// 
+

@@ -1,0 +1,3 @@
+create view select_product as
+select * from products where price > 5000 order by name;
+
