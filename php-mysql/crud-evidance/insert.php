@@ -4,8 +4,9 @@ if (isset($_POST['submit'])){
     $name = $_POST['name'];
     $age = $_POST['age'];
      $email = $_POST['email'];
-
-     $sql = "INSERT INTO users(name,age,email) VALUES ('$name','$age','$email')";
+     $rs = $db->query("call insert_manu('rres','Mirpur','0193747344')");
+    //  $sql = "call pro_testclass($name,$age,$email)";
+     $sql = "INSERT INTO user(name,age,email) VALUES ('$name','$age','$email')";
      if(mysqli_query($conn, $sql) == TRUE){ 
         echo "DATA INSERTED";
         header('location:view.php');
