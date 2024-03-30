@@ -41,8 +41,7 @@ delimiter ;
 
 
 drop view if exists view_product;
-create view view_product as select p.id,p.name,p.price,m.name manme,
-m.contact from product p, manufacturer m where m.id=p.manufac_id ;
+create view view_product as select p.id,p.name,p.price,m.name manme,m.contact from product p, manufacturer m where m.id=p.manufac_id ;
 
 
 delimiter //
@@ -55,6 +54,17 @@ end //
 
 delimiter ;
 
+
+
+delimiter //
+drop trigger if exists ad_manufacturer //
+create trigger ad_manufacturer after delete on manufacturer
+for each row
+begin 
+delete from product where manufac_id = old.id ;
+end //
+
+delimiter ;
 
 
 

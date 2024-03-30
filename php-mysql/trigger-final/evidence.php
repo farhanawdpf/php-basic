@@ -7,12 +7,14 @@ if(isset($_POST['btnSubmit'])){
 	$db->query(" call add_manufacture('$mname','$contact') ");
 }
 
+
 if(isset($_POST['addProduct'])){
 	$pname = $_POST['pname'];
 	$price = $_POST['price'];
 	$mid = $_POST['manufac'];
 	$db->query(" call add_product('$pname','$price','$mid') ");
 }
+
 
 if(isset($_POST['delmanufact'])){
 	$mid = $_POST['manufac'];
@@ -70,7 +72,8 @@ if(isset($_POST['delmanufact'])){
 		</tr>
 	</table>
 </form>
-<!-- after delete trigger -->
+
+
 <form action="#" method="post">
 	<table>
 		<tr>
