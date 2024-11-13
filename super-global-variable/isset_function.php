@@ -7,7 +7,7 @@ if(isset($x)){
 
 $y = null;
 if(isset($y)){ 
- echo "varible 'Y'";
+ echo "variable 'Y'";
 }
 
 ?>
