@@ -12,7 +12,7 @@ echo name();
 echo "<br>";
 
 function nam(){ 
-    return substr("Bangladesh",3);
+    return substr("Bangladesh",4);
 }
 echo nam();
 echo "<br>";
