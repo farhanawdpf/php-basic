@@ -6,7 +6,11 @@ class A{
  }
 
  function Show(){ 
-    echo "This is my Super class"."<br/>";
+    echo "This is my Supergdsf class"."<br/>";
+ }
+
+ function info(){ 
+    echo "This is my dfsf info class"."<br/>";
  }
 
 function __construct()
@@ -27,7 +31,7 @@ class B extends A{
 }
 
 $b = new B();
-// $b->info();
+$b->info();
 $b->Show();
 
 ?>

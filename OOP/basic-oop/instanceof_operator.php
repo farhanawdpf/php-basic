@@ -10,5 +10,5 @@ class B{
 $a = new A();
 $b = new B();
 
-var_dump($a instanceof A);
+var_dump($b instanceof B);
 ?>
