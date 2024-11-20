@@ -1,10 +1,14 @@
-<?php
-namespace Shakil;
-class User{
-    public $fname;
-    public $lname;
-    public function display () { 
-        echo "This is loging page";
+<?php 
+
+namespace Rafi;
+class User{ 
+    public $name;
+    public $age;
+
+    public function show () { 
+        echo "this next page";
     }
 }
+
+?>
     

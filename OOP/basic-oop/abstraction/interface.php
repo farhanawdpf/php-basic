@@ -3,6 +3,7 @@ interface User{
     public function getName();
     public function info();
     public function desplay();
+   
 
 }
 
