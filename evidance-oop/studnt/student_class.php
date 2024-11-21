@@ -18,7 +18,7 @@ class Student{
   
   //---------------csv function-------------------//
    public function csv(){
-	 return $this->id.",".$this->name.",".$this->course.",".$this->phone.PHP_EOL;   
+	 return $this->id.",".$this->name.",".$this->course.",".$this->phone.PHP_EOL;  //End Of Line or create new line 
    }
    
    //-----------save function-----------------//
@@ -28,7 +28,8 @@ class Student{
 	  	
 		   file_put_contents(self::$file_path,$this->csv(),FILE_APPEND);
 	   	   
-	   
+	   //The file_put_contents() writes data to a file.
+     // Use FILE_APPEND to avoid deleting the existing content of the file.
    }//end save	
        
    
@@ -37,6 +38,7 @@ class Student{
    public static function display_students(){
 	   
 	    $students=file(self::$file_path);
+      //The file() reads a file into an array.
 		
 		echo "<b>ID | Name | COURSE | PHONE</b><br/>";
 		foreach($students as $student){

@@ -15,15 +15,17 @@ class Student{
   
   //---------------csv function-------------------//
    public function csv(){
-	 return $this->id.",".$this->name.PHP_EOL;   
+	 return $this->id.",".$this->name.PHP_EOL;  //End Of Line or create new line 
    }
    
    //-----------save function-----------------//
    public function save(){
 	   
 	       $students=file(self::$file_path);  	   
-	  	
+	  	//The file() reads a file into an array.
 		   file_put_contents(self::$file_path,$this->csv(),FILE_APPEND);
+       //The file_put_contents() writes data to a file.
+     // Use FILE_APPEND to avoid deleting the existing content of the file.
 	   	   
 	   
    }//end save	
@@ -43,7 +45,8 @@ class Student{
 				
 		
    }   
-   
+   //The explode() function breaks a string into an array.
+   //The list() function is used to assign values to a list of variables in one operation.
  //-----------------end functions----------------   
 
 }// Student class
