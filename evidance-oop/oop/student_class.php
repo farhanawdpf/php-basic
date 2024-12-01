@@ -21,7 +21,7 @@ class Student{
    //-----------save function-----------------//
    public function save(){
 	   
-	       $students=file(self::$file_path);  	   
+	      //  $students=file(self::$file_path);  	   
 	  	//The file() reads a file into an array.
 		   file_put_contents(self::$file_path,$this->csv(),FILE_APPEND);
        //The file_put_contents() writes data to a file.
@@ -38,8 +38,8 @@ class Student{
 	    $students=file(self::$file_path);
 		
 		echo "<b>ID | Name</b><br/>";
-		foreach($students as $student){
-				   list($id,$name)=explode(",",trim($student));
+		foreach($students as $dfg){
+				   list($id,$name)=explode(",",trim($dfg));
 				   echo "$id | $name<br/>";   
 	    }
 				

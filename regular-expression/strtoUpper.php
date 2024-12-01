@@ -1,6 +1,6 @@
 <?php
 
-$a="ROWDRArowdra";
+$a="rainbow";
 $b=strtoupper($a);
 
 	echo $b;

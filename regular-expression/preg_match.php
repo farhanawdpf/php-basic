@@ -9,13 +9,16 @@ if(!$output){
 	
 }
 
-//echo $output;
+// echo $output;
+
+echo "<br>";
 
 $data2="3/34, * Tajmahal Road";
 
 $output2 = preg_match("/[0-9,a-zA-Z \/]+$/",$data2);
 
-echo $output2;
+// echo $output2;
+print_r($output2);
 
 
 ?>
