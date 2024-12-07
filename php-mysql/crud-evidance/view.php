@@ -1,9 +1,9 @@
 <?php 
-$conn = mysqli_connect('localhost','root','','crud-one');
+$conn = mysqli_connect('localhost','root','','student_info');
 if (isset($_GET['deleteid'])){ 
     $deleteid = $_GET['deleteid'];
 
-     $sql = "DELETE FROM  users WHERE id = $deleteid";
+     $sql = "DELETE FROM  user WHERE id = $deleteid";
      if(mysqli_query($conn, $sql) == TRUE){ 
         header('location:view.php');
      }
@@ -29,14 +29,13 @@ if (isset($_GET['deleteid'])){
             <h3 class="text-center p-2 m-2 bg-success text-white">User Information</h3>
            
             <?php 
-            $sql = 'SELECT * FROM users';
+            $sql = 'SELECT * FROM user';
             
             $query = mysqli_query($conn, $sql);
             echo "<table class='table table-success'>
              <tr>
                 <th>id</th>
                 <th>name</th>
-                <th>age</th>
                 <th>email</th>
                 <th>Action</th>
              </tr>";
@@ -44,12 +43,12 @@ if (isset($_GET['deleteid'])){
 
             $id = $data['id'];
             $name = $data['name'];
-            $age = $data['age'];
+           
             $email = $data['email'];
             echo "<tr> 
                     <td>$id</td>
                     <td>$name</td>
-                    <td>$age</td>
+                    
                     <td>$email</td>
                     <td>
                     <span class='btn btn-success'><a href='edit.php?id=$id' class='text-white text-decoration-none'>Edit</a></span>

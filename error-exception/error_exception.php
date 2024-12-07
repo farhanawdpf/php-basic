@@ -10,8 +10,10 @@
 
 
 $a = 40;
+
+
 try{ 
-if ($a>30){ 
+if ($a<30){ 
  throw new Exception("Invalid Number"); 
 }else { 
     throw new Exception("Valid Number");

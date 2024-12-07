@@ -1,22 +1,19 @@
 <?php 
-$conn = mysqli_connect('localhost','root','','crud-one');
+$conn = mysqli_connect('localhost','root','','new_database');
 if ($_GET['id']){ 
     $getid = $_GET['id'];
-   $sql = "SELECT * FROM users WHERE id=$getid";
+   $sql = "SELECT * FROM user WHERE id=$getid";
    $query = mysqli_query($conn, $sql);
    $data = mysqli_fetch_assoc($query);
    $id = $data['id'];
    $name = $data['name'];
-   $age = $data['age'];
    $email = $data['email'];
 }
      if (isset($_POST['edit'])) {
         $id = $_POST['id'];
         $name = $_POST['name'];
-        $age = $_POST['age'];
          $email = $_POST['email'];
-     $sql1 = "UPDATE users SET name='$name',
-                                age='$age',
+     $sql1 = "UPDATE user SET name='$name',
                                 email='$email' where id = '$id' ";
      if(mysqli_query($conn, $sql1) == TRUE){ 
         header('location:view.php');
@@ -43,8 +40,6 @@ if ($_GET['id']){
     <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST"> 
         Name:<br>
         <input type ="text" name ="name" value="<?php echo $name ?>"><br><br>
-        Age:<br>
-        <input type ="text" name ="age" value="<?php echo $age ?>"><br><br>
         Email:<br>
         <input type ="email" name ="email" value="<?php echo $email ?>"><br><br>
         <input type ="text" name ="id" value =" <?php echo $id ?>" hidden><br><br>

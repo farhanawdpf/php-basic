@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2023 at 08:21 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Dec 07, 2024 at 07:22 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,43 +18,37 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `crud-one`
+-- Database: `student_info`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `user`
 --
 
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `age` int(3) NOT NULL,
-  `email` varchar(100) NOT NULL
+CREATE TABLE `user` (
+  `id` int(10) NOT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data for table `user`
 --
 
-INSERT INTO `users` (`id`, `name`, `age`, `email`) VALUES
-(2, 'Bristy 2', 19, 'admin@gmail.com'),
-(3, 'dfg', 12, 'admin@hotmail.com'),
-(5, 'dfg', 12, 'admin@hotmail.com'),
-(6, 'g', 12, 'farhanawdpf@gmail.com'),
-(7, 'dfg', 12, 'admin@hotmail.com'),
-(8, 'df', 12, 'admin@hotmail.com'),
-(9, 'hh', 12, 'admin@hotmail.com');
+INSERT INTO `user` (`id`, `name`, `email`) VALUES
+(2, 'Rafi d', 'R@gmail.com'),
+(5, 'farhana', 'akter@gmail.com');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `users`
+-- Indexes for table `user`
 --
-ALTER TABLE `users`
+ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -62,10 +56,10 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT for table `user`
 --
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+ALTER TABLE `user`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

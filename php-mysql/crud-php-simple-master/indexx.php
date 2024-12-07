@@ -3,7 +3,7 @@
 require_once("dbConnection.php");
 
 // Fetch data in descending order (lastest entry first)
-$result = mysqli_query($mysqli, "SELECT * FROM user ORDER BY id DESC");
+$result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
 // or
 // $user = $mysqli->query("select * from user");
 
