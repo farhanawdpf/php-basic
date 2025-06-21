@@ -14,7 +14,8 @@ if ($_GET['id']){
         $name = $_POST['name'];
          $email = $_POST['email'];
      $sql1 = "UPDATE user SET name='$name',
-                                email='$email' where id = '$id' ";
+                              email='$email'
+            where id = '$id' ";
      if(mysqli_query($conn, $sql1) == TRUE){ 
         header('location:view.php');
         echo "DATA update";
@@ -23,7 +24,6 @@ if ($_GET['id']){
      }
     }
     
-
 
 ?>
 

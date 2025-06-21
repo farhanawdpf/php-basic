@@ -1,16 +1,17 @@
 <?php 
-$conn = mysqli_connect('localhost','root','','student_info');
+$conn = mysqli_connect('localhost','root','','new_database');
 if (isset($_POST['submit'])){ 
     $name = $_POST['name'];
      $email = $_POST['email'];
 
-     $sql = "INSERT INTO user(name,email) VALUES ('$name','$email')";
-     if(mysqli_query($conn, $sql) == TRUE){ 
-        echo "DATA INSERTED";
-        header('location:view.php');
-     }else{ 
-        echo "not inserted";
-     }
+    //  $sql = "INSERT INTO user(name,email) VALUES ('$name','$email')";
+    $conn->query(" call create_user('$name','$email') ");
+    //  if(mysqli_query($conn, $sql) == TRUE){ 
+    //     echo "DATA INSERTED";
+    //     header('location:view.php');
+    //  }else{ 
+    //     echo "not inserted";
+    //  }
 }
 
 
