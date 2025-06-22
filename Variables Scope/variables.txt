@@ -1,3 +1,15 @@
 1.local
 2.global
 3.static
+
+
+constant
+define(name, value);
+
+define('ANIMALS', array(
+    'dog',
+    'cat',
+    'bird'
+));
+echo ANIMALS[1]; // outputs "cat"
+?>
