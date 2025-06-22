@@ -8,6 +8,7 @@
 <body>
     <h1>Constant </h1>
 
+<!-- define(name, value); -->
     <?php 
        define('ANIMALS', array(
     'dog',
@@ -21,10 +22,10 @@ echo ANIMALS[2]; // outputs "cat"
 echo "<br>";
 echo "<br>";
 echo "<br>";
-const CONSTANT = 'Hello World';
+const BA = 'Hello World';
 // const CONSTANT = 'Hello';//already define
 
-echo CONSTANT;
+echo BA;
 
 const ANOTHER_CONST = CONSTANT.'; Goodbye World';
 echo ANOTHER_CONST;
@@ -32,8 +33,8 @@ echo ANOTHER_CONST;
 ?>
 
 <?php
-define("CONSTANT", "Hello world.");
-echo CONSTANT; // outputs "Hello world."
+define("Constant", "Hello world.");
+// echo CONSTANT; // outputs "Hello world."
 echo Constant; // Emits an Error: Undefined constant "Constant"
                // Prior to PHP 8.0.0, outputs "Constant" and issues a warning.
 ?>

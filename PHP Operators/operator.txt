@@ -104,11 +104,13 @@ $x--	Post-decrement	Returns $x, then decrements $x by one
 <?php
 $x = 10;  
 echo ++$x;//11 output new value x=x+1
+echo $x;//11
 ?> 
 
 <?php
 $x = 10;  
 echo $x++;//10 old value
+echo $x;//11
 ?>  
 
 <?php
@@ -221,3 +223,20 @@ $y = array("c" => "blue", "d" => "yellow");
 
 var_dump($x === $y);//false
 ?>  
+
+
+
+
+xor
+
+
+A    B
+0    0	=0
+0     1	=1
+1    0	=1
+1     1      =0
+
+1   1  1 =1
+
+
+
