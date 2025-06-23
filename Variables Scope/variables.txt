@@ -98,8 +98,6 @@ Using GET for the method
 
 
 
-
-
 constant
 define(name, value);
 
