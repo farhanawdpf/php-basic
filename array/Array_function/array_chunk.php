@@ -1,4 +1,6 @@
 <?php 
+
+//array_chunk(array, size, preserve_key)
 $c =array("ab","bc","ca","bd","rg","tk","ab","bc","ca",);
 shuffle($c);
 
