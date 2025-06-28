@@ -8,34 +8,14 @@ function __destruct(){
  function info(){ 
     echo "this is info method";
  }
-function __construct($name){ 
-    echo "this is construct function.";
-}
+ function __construct($name){ 
+        echo ",this is <br>".$this->name=$name;
+    }
  
 }
-// $newObj=new Car();
-// echo "<br>";
-//  $newObj->info();
-//  echo "<br>";
- class Bike extends Car { 
-    public $color="red";
-    function __construct($name){ 
-        echo ",this is child construct <br>".$this->name=$name;
-    }
-    public function details(){ 
-        echo "this is child method";
-    }
-     function info(){ 
-        echo "this is info method";
-    }
- }
+$newObj=new Car('Toyota');
+echo "<br>";
+ $newObj->info();
 
- $bikeObj=new Bike("Honda");
- $bikeObj->details();
- $bikeObj->info();
- echo "<br>";
- echo $bikeObj->color;
- echo "<br>";
-//  echo $bikeObj->name;
- echo "<br>";
+
 ?>
