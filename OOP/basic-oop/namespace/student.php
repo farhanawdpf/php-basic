@@ -1,8 +1,6 @@
 <?php 
-
-namespace Razib;
-
-class User2{
+namespace Sapp;
+class User{
     public $fname;
     public $lname;
     public function display () { 

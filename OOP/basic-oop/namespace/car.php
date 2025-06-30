@@ -1,6 +1,5 @@
 <?php 
-
-namespace Ali;
+namespace Capp;
 class Car { 
     public function info(){ 
         echo "This is Car.";

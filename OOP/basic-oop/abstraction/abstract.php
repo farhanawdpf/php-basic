@@ -1,8 +1,12 @@
 <?php 
+// An abstract class is a class that contains at least one abstract method. An abstract method is a method that is declared, but not implemented in the code.
+
+// abstract have properties.
+// abstract class methods is public or protected
 abstract class User{ 
     abstract public function getName();
   
-    public function desplay(){ 
+    public function display(){ 
         echo "third";
     }
 
@@ -13,8 +17,8 @@ class wdpf extends  User{
         echo "Done";
     }
   
-    public function desplay(){ 
-        echo "third";
+    public function display(){ 
+        echo "third2";
     }
 }
 class we extends  User{ 
@@ -22,12 +26,13 @@ class we extends  User{
         echo "Done2";
     }
   
-    public function desplay(){ 
-        echo "third";
+    public function display(){ 
+        echo "third3";
     }
 }
 
 
 $add = new we;
 $add->getName();
+$add->display();
 ?>

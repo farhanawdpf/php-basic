@@ -11,6 +11,7 @@ function __destruct(){
  function __construct($name){ 
         echo ",this is <br>".$this->name=$name;
     }
+
  
 }
 $newObj=new Car('Toyota');

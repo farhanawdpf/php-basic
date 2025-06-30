@@ -1,6 +1,5 @@
 <?php 
-
-namespace Rafi;
+namespace Uapp;
 class User{ 
     public $name;
     public $age;
