@@ -7,9 +7,10 @@ public static function info(){
 }
 }
 
-// $person =new User;
-echo User::name;
+// $person =new User();
+// $person->info();
+
 echo User::info();
-echo User::$name="my world";
-// echo $person->name="my world";
-?>
+echo User::name;
+// echo User::$name="Hello dfg!"."<br>";//error
+
