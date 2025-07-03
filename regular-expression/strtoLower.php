@@ -1,6 +1,6 @@
 <?php
 
-$a="this is silent area.";
+$a="TRThis is silent area.";
 $b=strtolower($a);
 
 	echo $b;
