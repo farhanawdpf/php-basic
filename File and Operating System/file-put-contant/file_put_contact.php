@@ -1,4 +1,5 @@
 <?php
+// file_put_contents(filename, data, mode, context)
 echo file_put_contents("store.txt","hi");
 
 echo "<br>";

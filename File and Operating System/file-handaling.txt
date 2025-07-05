@@ -3,6 +3,10 @@ In PHP, File handling is the process of interacting with files on the server, su
 
 Types of File Operations in PHP
 Several types of file operations can be performed in PHP:
+fopen() - Opens file or URL
+fwrite() - Binary-safe file write
+file_get_contents() - Reads entire file into a string
+
 
 Reading Files: PHP allows you to read data from files either entirely or line by line.
 Writing to Files: You can write data to a file, either overwriting existing content or appending to the end.
