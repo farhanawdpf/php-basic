@@ -21,4 +21,12 @@ $output2 = preg_match("/[0-9,a-zA-Z \/]+$/",$data2);
 print_r($output2);
 
 
+
+?>
+
+<?php
+$string = "The quick brown fox\njumps over\nthe lazy dog.";
+if (preg_match('/fox.*dog/s', $string)) {
+  echo "Match found!";
+}
 ?>

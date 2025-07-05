@@ -1,5 +1,5 @@
 <?php
 
-print_r(preg_split("/[ ]/","This is a text"));
+print_r(preg_split("/[ ]/","This is a text element"));
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-$pswd = "secpswd";
+$pswd = "secpswordpass";
 
 if (strlen($pswd)<10)
 	echo "Password is too short";
